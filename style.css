@@ -1,0 +1,403 @@
+/* style.css */
+.stApp {
+    background: url("data:image/jpeg;base64,{background_base64}");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.title-text {
+    color: #fff;
+    text-align: center;
+    font-size: 32px;
+    font-weight: bold;
+    text-shadow: 2px 2px 8px rgba(0,0,0,0.8);
+}
+
+.movie-container {
+    padding: 20px;
+    border-radius: 10px;
+    color: white;
+    text-align: center;
+}
+
+.overview-box {
+    background: rgba(255,255,255,0.9);
+    color: black;
+    padding: 15px;
+    border-radius: 10px;
+    font-size: 16px;
+    text-align: left;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.recommendation-title, .cast-name {
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    margin-top: 8px;
+    text-shadow: 1px 1px 4px rgba(0,0,0,0.8);
+}
+
+.poster-img {
+    border-radius: 10px;
+    width: 300px;
+    height: 450px;
+    display: block;
+    margin: auto;
+    border: 5px solid white;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    cursor: pointer;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+}
+
+.poster-img:hover {
+    transform: scale(1.05);
+    opacity: 0.9;
+}
+
+.cast-img {
+    width: 150px;
+    height: 225px;
+    border-radius: 10px;
+    display: block;
+    margin: auto;
+    border: 5px solid white;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    cursor: pointer;
+    box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+}
+
+.cast-img:hover {
+    transform: scale(1.08);
+    opacity: 0.9;
+}
+
+.spacer-large {
+    margin-bottom: 80px;
+}
+
+.recommendation-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+    text-align: center;
+}
+
+.recommendation-card:hover {
+    transform: scale(1.05);
+}
+
+.recommendation-card img {
+    border-radius: 10px;
+    width: 200px;
+    height: 300px;
+    transition: opacity 0.3s ease;
+    border: 5px solid white;
+    box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+}
+
+.recommendation-card:hover img {
+    opacity: 0.9;
+}
+
+.streamlit-expanderHeader {
+    background: rgba(0,0,0,0.7);
+    color: white !important;
+    border-radius: 8px;
+    padding: 8px 12px;
+    margin-top: 10px;
+}
+
+.streamlit-expanderHeader:hover {
+    background: rgba(0,0,0,0.8);
+}
+
+.streamlit-expanderContent {
+    background: rgba(0,0,0,0.7);
+    border-radius: 0 0 8px 8px;
+    padding: 15px;
+    color: white;
+    margin-bottom: 15px;
+}
+
+.review-card {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(5px);
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    border: 1px solid rgba(255,255,255,0.2);
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.review-card:hover {
+    background: rgba(255, 255, 255, 0.2);
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+    border: 1px solid rgba(255,255,255,0.4);
+}
+
+.review-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    transition: all 0.3s ease;
+}
+
+.review-actions {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.review-actions button {
+    padding: 5px 10px;
+    font-size: 0.8rem;
+}
+
+.review-avatar {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 10px;
+}
+
+.review-content {
+    font-size: 16px;
+    line-height: 1.7;
+    padding: 10px;
+    color: white;
+}
+
+.liked-count {
+    color: #ffcc00;
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 30px;
+    font-weight: bold;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.8);
+}
+
+.liked-movie-card {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(5px);
+    border-radius: 10px;
+    padding: 15px;
+    margin-bottom: 20px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    text-align: center;
+    border: 1px solid rgba(255,255,255,0.2);
+}
+
+.liked-movie-card:hover {
+    background: rgba(255, 255, 255, 0.2);
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+    border: 1px solid rgba(255,255,255,0.4);
+}
+
+.liked-poster {
+    width: 100%;
+    height: 450px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    border: 3px solid white;
+    transition: all 0.3s ease;
+}
+
+.liked-movie-card:hover .liked-poster {
+    transform: scale(1.03);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.4);
+    border-color: #ffcc00;
+}
+
+.liked-movie-title {
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    margin-top: 8px;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.8);
+    transition: all 0.3s ease;
+}
+
+.no-liked-movies {
+    background: rgba(255,255,255,0.15);
+    backdrop-filter: blur(5px);
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    color: #ddd;
+    font-size: 18px;
+    margin-top: 50px;
+    border: 1px dashed rgba(255,255,255,0.3);
+}
+
+.no-liked-movies h3 {
+    color: #ffcc00;
+    margin-bottom: 15px;
+}
+
+.no-liked-movies p {
+    font-size: 16px;
+    opacity: 0.8;
+}
+
+/* ===== Sidebar Styles ===== */
+.stSidebar {
+    background: rgba(15, 15, 15, 0.9) !important;
+    backdrop-filter: blur(10px);
+    border-right: 1px solid rgba(255, 204, 0, 0.2);
+    padding: 20px !important;
+}
+
+.stSidebar .stMarkdown h2 {
+    color: #ffcc00 !important;
+    font-size: 1.5rem !important;
+    text-align: center;
+    margin-bottom: 1.5rem !important;
+    padding-bottom: 10px;
+    border-bottom: 2px solid rgba(255, 204, 0, 0.5);
+}
+
+.stSidebar .stRadio > div {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 30px;
+    padding: 5px;
+    margin-bottom: 1.5rem;
+}
+
+.stSidebar .stRadio label {
+    color: white !important;
+    font-weight: 500;
+    padding: 8px 20px;
+    border-radius: 20px;
+    transition: all 0.3s ease;
+    margin: 0 2px !important;
+    font-size: 0.9rem;
+}
+
+.stSidebar .stRadio input:checked + label {
+    background: #ffcc00 !important;
+    color: #000 !important;
+    font-weight: 600;
+    box-shadow: 0 2px 10px rgba(255, 204, 0, 0.3);
+}
+
+.stSidebar input {
+    background: rgba(255, 255, 255, 0.1) !important;
+    border: 1px solid rgba(255, 255, 255, 0.2) !important;
+    color: white !important;
+    padding: 12px 15px !important;
+    border-radius: 8px !important;
+    margin-bottom: 1rem !important;
+    transition: all 0.3s ease;
+    width: 100% !important;
+}
+
+.stSidebar input:focus {
+    border-color: #ffcc00 !important;
+    box-shadow: 0 0 0 2px rgba(255, 204, 0, 0.2) !important;
+    background: rgba(255, 255, 255, 0.15) !important;
+}
+
+.stSidebar input::placeholder {
+    color: rgba(255, 255, 255, 0.5) !important;
+}
+
+.stSidebar button {
+    background: linear-gradient(135deg, #ffcc00, #ffaa00) !important;
+    color: #000 !important;
+    border: none !important;
+    padding: 12px !important;
+    border-radius: 8px !important;
+    font-weight: 600 !important;
+    transition: all 0.3s ease !important;
+    margin-top: 0.5rem !important;
+    width: 100% !important;
+    box-shadow: 0 2px 10px rgba(255, 204, 0, 0.3) !important;
+}
+
+.stSidebar button:hover {
+    background: linear-gradient(135deg, #ffdd33, #ffbb33) !important;
+    transform: translateY(-2px) !important;
+    box-shadow: 0 5px 15px rgba(255, 204, 0, 0.4) !important;
+}
+
+/* Logout button specific styling */
+.stSidebar button:has(> div:contains("Logout")) {
+    background: rgba(255, 204, 0, 0.1) !important;
+    color: #ffcc00 !important;
+    border: 1px solid rgba(255, 204, 0, 0.3) !important;
+    margin-top: 2rem !important;
+    box-shadow: none !important;
+}
+
+.stSidebar button:has(> div:contains("Logout")):hover {
+    background: rgba(255, 204, 0, 0.2) !important;
+}
+
+/* Login Prompt */
+.login-prompt {
+    margin: 30px auto;
+    max-width: 600px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(5px);
+    padding: 20px 30px;
+    border-radius: 12px;
+    text-align: center;
+    font-size: 18px;
+    color: #fff;
+    font-weight: 500;
+    border: 1px solid rgba(255,255,255,0.2);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+    transition: all 0.3s ease;
+}
+
+.login-prompt:hover {
+    background: rgba(255, 255, 255, 0.2);
+    transform: scale(1.01);
+    box-shadow: 0 12px 30px rgba(0,0,0,0.4);
+    color: #ffcc00;
+}
+
+/* ===== Global Button Styling ===== */
+button[kind="primary"], .stButton>button {
+    background: linear-gradient(135deg, #ffcc00, #ffaa00);
+    color: #000;
+    font-weight: bold;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 12px rgba(255, 204, 0, 0.4);
+    cursor: pointer;
+}
+
+button[kind="primary"]:hover, .stButton>button:hover {
+    background: linear-gradient(135deg, #ffdd33, #ffbb33);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 18px rgba(255, 204, 0, 0.5);
+}
+
+button[kind="primary"]:focus, .stButton>button:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(255, 204, 0, 0.5);
+}
+
+.stButton>button:disabled {
+    background: rgba(255, 255, 255, 0.3);
+    color: #888;
+    cursor: not-allowed;
+    box-shadow: none;
+    transform: none;
+}
+
