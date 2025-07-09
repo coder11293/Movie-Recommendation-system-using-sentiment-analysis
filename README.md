@@ -3,6 +3,7 @@
 
 A Streamlit web app that recommends movies using cosine similarity and analyzes reviews with TextBlob sentiment analysis.
 
+# Download python and add jupyter and python extension in vs code 
 
 
 2. Install packages: Go to terminal and paste
