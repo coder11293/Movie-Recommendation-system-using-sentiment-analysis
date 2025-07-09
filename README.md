@@ -27,8 +27,4 @@ streamlit run app.py
 
 
 
-## How It Works
-1. **Recommendations**: Cosine similarity on movie overviews
-2. **Sentiment**: TextBlob analyzes review emotions
-3. **TMDB Integration**: Fetches posters, cast details
 
