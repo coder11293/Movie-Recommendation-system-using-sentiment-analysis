@@ -1,27 +1,9 @@
-Here's the clean, markdown-formatted README text for you to copy-paste:
 
-```markdown
 # Movie Recommendation System with Sentiment Analysis
 
 A Streamlit web app that recommends movies using cosine similarity and analyzes reviews with TextBlob sentiment analysis.
 
-## Features
-- 🎬 Personalized movie recommendations
-- 😊 Sentiment analysis of user reviews
-- 👍 Like/favorite system
-- ✍️ Review writing with ratings
-- 🎥 Movie details & cast info
 
-## Requirements
-- Python 3.7+
-- TMDB API key (free)
-
-## Installation
-1. Clone repo:
-```bash
-git clone https://github.com/your-username/Movie-Recommendation-system.git
-cd Movie-Recommendation-system
-```
 
 2. Install packages:
 ```bash
@@ -43,14 +25,7 @@ API_KEY = "your_key_here"  # Replace this
 streamlit run app.py
 ```
 
-## File Structure
-```
-app.py                    - Main application
-movie_data.pkl            - Processed movie data
-users.csv                 - User accounts (auto-created) 
-feedback.csv              - Liked movies (auto-created)
-user_reviews.csv          - Reviews (auto-created)
-```
+
 
 ## How It Works
 1. **Recommendations**: Cosine similarity on movie overviews
