@@ -2,6 +2,8 @@
 # Movie Recommendation System with Sentiment Analysis
 
 A Streamlit web app that recommends movies using cosine similarity and analyzes reviews with TextBlob sentiment analysis.
+
+
 (Use dark mode on your Pc it shows best css)
 
 1. Download python and add jupyter and python extension in vs code 
