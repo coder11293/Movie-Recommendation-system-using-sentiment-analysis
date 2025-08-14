@@ -69,4 +69,3 @@ streamlit run app.py
 
 
 
-Do you want me to prepare it in **GitHub-optimized README format** with badges and extra styling?
